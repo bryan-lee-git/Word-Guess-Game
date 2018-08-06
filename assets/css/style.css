@@ -1,6 +1,10 @@
 body {
     margin: 0 auto;
-    background-image: url(../images/curls.png);
+    background-image: url(../images/pedal-background.png);
+}
+
+h2 {
+    font-size: 20px;
 }
 
 .container {
@@ -11,12 +15,14 @@ body {
     padding: 40px;
 }
 
-.underscores {
+.underscoresArea {
     border: 2px solid black;
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
     padding: 20px;
+    border-radius: 10px;
+    font-size:40px;
 }
 
 .rightGuess {
@@ -25,6 +31,8 @@ body {
     margin-bottom: 10px;
     text-align: center;
     padding: 20px;
+    height: 200px;
+    border-radius: 10px;
 }
 
 .wrongGuess {
@@ -33,4 +41,16 @@ body {
     margin-bottom: 10px;
     text-align: center;
     padding: 20px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.guessesRemaining {
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 20px;
+    height: 200px;
+    border-radius: 10px;
 }
