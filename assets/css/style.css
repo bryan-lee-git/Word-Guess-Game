@@ -1,0 +1,36 @@
+body {
+    margin: 0 auto;
+    background-image: url(../images/curls.png);
+}
+
+.container {
+    background-color: white;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.underscores {
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.rightGuess {
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.wrongGuess {
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 20px;
+}
