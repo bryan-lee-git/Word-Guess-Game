@@ -54,3 +54,18 @@ h2 {
     height: 200px;
     border-radius: 10px;
 }
+
+.getHint {
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 20px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.getHintButton {
+    width: 90%;
+    padding: 20px;
+}
