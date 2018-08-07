@@ -13,7 +13,7 @@ var wordGen = hangmanWords[Math.floor(Math.random() * hangmanWords.length)];
 let wordUnderscore = [];
 let rightGuesses = [];
 let wrongGuesses = [];
-let remainingGuesses = 10;
+let remainingGuesses = 5;
 let winCount = 0;
 //testing
 console.log(wordGen);
@@ -61,14 +61,14 @@ document.addEventListener('keypress', (event) => {
         winCount++;
         //empty right guess, wrong guess, and wordUnderscore arrays
         rightGuesses = [];
-        wrongGuesses =[];
+        wrongGuesses = [];
         wordUnderscore = [];
         //get new word, convert to underscores
         wordGen = hangmanWords[Math.floor(Math.random() * hangmanWords.length)];
         underscoreGen();
     }
     //if the player reaches 10 wrong guesses, the player loses the game
-    if (wrongGuesses.length > 9) {
+    if (wrongGuesses.length > 4) {
         loseSound.play ();
         alert(wordGen + " - You Lose!");
         //reload resources
