@@ -63,6 +63,7 @@ document.addEventListener('keypress', (event) => {
         rightGuesses = [];
         wrongGuesses = [];
         wordUnderscore = [];
+        remainingGuesses = 5;
         //get new word, convert to underscores
         wordGen = hangmanWords[Math.floor(Math.random() * hangmanWords.length)];
         underscoreGen();
