@@ -53,7 +53,7 @@ document.addEventListener('keypress', (event) => {
         window.location.reload(false);
     }
     //if the player reaches 5 wrong guesses, the player loses the game
-    if (wrongGuesses.length > 4) {
+    if (wrongGuesses.length > 9) {
         alert(wordGen + " - You Lose!");
         //reload resources after alert is clicked
         window.location.reload(false);
