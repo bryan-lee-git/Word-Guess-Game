@@ -3,69 +3,125 @@ body {
     background-image: url(../images/pedal-background.png);
 }
 
+h1 {
+    
+}
+
 h2 {
     font-size: 20px;
+    margin-bottom: 20px;
 }
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    margin-top:0px;
+}
+
+.knockout {
+    background: url(../images/pedal-background.png);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: bold;
+    font-size: 60px;
+    margin: 10px auto;
+    text-align: center;
+  }
 
 .container {
     background-color: white;
-    width: 80%;
+    width: 85%;
     margin: 20px auto;
     border-radius: 10px;
     padding: 40px;
+    -moz-box-shadow: 2px 2px 2px 2px rgba(68, 68, 68, 0.3);
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(68, 68, 68, 0.3);
+    box-shadow: 2px 2px 2px 2px rgba(68, 68, 68, 0.3);
+}
+
+.titleText {
+    text-align: center;
 }
 
 .underscoresArea {
-    border: 2px solid black;
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
     padding: 20px;
     border-radius: 10px;
     font-size:40px;
+    height: 100px;
+    -moz-box-shadow: 2px 2px 2px 2px rgba(68, 68, 68, 0.3);
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(68, 68, 68, 0.3);
+    box-shadow: 2px 2px 2px 2px rgba(68, 68, 68, 0.3);
 }
 
 .rightGuess {
-    border: 2px solid black;
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
     padding: 20px;
     height: 200px;
     border-radius: 10px;
+    -moz-box-shadow: 2px 2px 2px 2px rgba(68, 68, 68, 0.3);
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(68, 68, 68, 0.3);
+    box-shadow: 2px 2px 2px 2px rgba(68, 68, 68, 0.3);
 }
 
 .wrongGuess {
-    border: 2px solid black;
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
     padding: 20px;
     height: 200px;
     border-radius: 10px;
+    -moz-box-shadow: 2px 2px 2px 2px rgba(68, 68, 68, 0.3);
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(68, 68, 68, 0.3);
+    box-shadow: 2px 2px 2px 2px rgba(68, 68, 68, 0.3);
 }
 
 .guessesRemaining {
-    border: 2px solid black;
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
     padding: 20px;
     height: 200px;
     border-radius: 10px;
+    -moz-box-shadow: 2px 2px 2px 2px rgba(68, 68, 68, 0.3);
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(68, 68, 68, 0.3);
+    box-shadow: 2px 2px 2px 2px rgba(68, 68, 68, 0.3);
 }
 
 .getHint {
-    border: 2px solid black;
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
     padding: 20px;
     height: 200px;
     border-radius: 10px;
+    -moz-box-shadow: 2px 2px 2px 2px rgba(68, 68, 68, 0.3);
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(68, 68, 68, 0.3);
+    box-shadow: 2px 2px 2px 2px rgba(68, 68, 68, 0.3);
 }
 
 .getHintButton {
     width: 90%;
     padding: 20px;
+    font-size: 10px;
+    background-color: #ff0000;
+    border: none;
+}
+
+.getHintButton:hover {
+    background-color: #ff5555;
+    border: none;
+}
+
+.visitorsPlayerBox {
+    display: block;
+    margin: 0 auto;
+    font-size: 19px;
 }
