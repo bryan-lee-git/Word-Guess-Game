@@ -4,10 +4,12 @@
 var hangmanWords = ["distortion", "delay", "tremolo", "octave", "chorus", "flanger", "compression", "overdrive", "equalization", "looper", "reverb"];
 //an array of hints for each effect
 var hintsBox = ["This guitar effect is usually achieved by significantly increasing the gain.", "An effects unit which records an input signal to an audio storage medium, and then plays it back after a period of time.", "A modulation effect that creates a repeating change in volume.", "An effects unit which mix the input signal with a synthesised signal whose musical tone is an octave lower or higher than the original.", "Occurs when individual sounds with approximately the same time, and very similar pitches converge and are perceived as one.", "An audio effect produced by mixing two identical signals together, one signal delayed by a small and gradually changing period, usually smaller than 20 milliseconds.", "Automatic volume control. It turns down the volume when a signal becomes louder than a set level and turns it back up when the signal drops below that level.", "Often a twofold effect: either to provide a gain boost that pushes a tube amp into distortion, or to approximate the mildly distorted sound of a slightly peaking tube amp. In practice, most do a little of both.", "A process commonly used to alter the frequency response of an audio system using linear filters. Most hi-fi equipment uses relatively simple filters to make bass and treble adjustments.", "This effect ecords short passages played on an instrument and plays them back on repeat", "An effect created when a sound or signal is reflected causing a large number of reflections to build up and then decay as the sound is absorbed by the surfaces of objects in the space – which could include furniture, people, and air."];
+
 //create variable for game sounds
 var winSound = new Audio('./assets/sounds/winSound.mp3');
 var loseSound = new Audio('./assets/sounds/loseSound.mp3');
 var hintSound = new Audio('./assets/sounds/hintSound.mp3');
+
 //random word chosen from the hangmanWords array
 var wordGen = hangmanWords[Math.floor(Math.random() * hangmanWords.length)];
 let wordUnderscore = [];
@@ -21,6 +23,7 @@ console.log(wordGen);
 function playAudio() { 
     x.play(); 
 } 
+
 //make underscore display based on length of word
 let underscoreGen = () => {
     for (var i = 0; i < wordGen.length; i++) {
@@ -31,7 +34,8 @@ let underscoreGen = () => {
 //testing
 console.log(underscoreGen()); 
 //game needs to recognize keypresses and begin when player presses a key to make their first guess
-document.addEventListener('keypress', (event) => {
+
+document.on("keypress", (event) => {
     let typedGuess = String.fromCharCode(event.keyCode);
     //if letter has already been guessed, show an alert 
     if (rightGuesses.lastIndexOf(typedGuess) > -1 || wrongGuesses.lastIndexOf(typedGuess) > -1) {
@@ -86,6 +90,7 @@ document.addEventListener('keypress', (event) => {
     document.querySelector(".remainingGuessesArea").innerHTML = remainingGuesses - wrongGuesses.length;
 });  
 //on button click get hint and lose a guess
+
 $(".getHintButton").click(function() {
     hintSound.play ();
     remainingGuesses = remainingGuesses - 1;

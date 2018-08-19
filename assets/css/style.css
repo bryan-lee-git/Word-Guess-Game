@@ -3,9 +3,6 @@ body {
     background-image: url(../images/pedal-background.png);
 }
 
-h1 {
-}
-
 h2 {
     font-size: 20px;
     margin-bottom: 20px;
@@ -25,7 +22,7 @@ h4 {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 80px;
     margin: 10px auto;
     text-align: center;
   }
@@ -140,4 +137,16 @@ h4 {
     display: block;
     margin: 0 auto;
     font-size: 19px;
+}
+
+@media screen and (max-width: 800px) {
+.knockout {
+    background: url(../images/pedal-background.png);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 10px auto;
+    text-align: center;
+  }
 }
